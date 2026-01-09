@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visa Processing | Divine God Ventures</title>
+</head>
+<body>
+
+<h1>Visa Processing</h1>
+
+<nav>
+  <a href="/">Home</a> |
+  <a href="/about.html">About Us</a> |
+  <a href="/tour.html">Tour</a> |
+  <a href="/visa.html">Visa Processing</a> |
+  <a href="/blog.html">Blog</a> |
+  <a href="/contact.html">Contact Us</a>
+</nav>
+
+<hr>
+
+<form method="POST" action="/submit-visa">
+  <input name="firstName" placeholder="First Name" required><br><br>
+  <input name="lastName" placeholder="Last Name" required><br><br>
+  <input type="email" name="email" placeholder="Email" required><br><br>
+  <input name="phone" placeholder="Phone Number" required><br><br>
+
+  <label>Departing</label><br>
+  <input type="date" name="departing" required><br><br>
+
+  <label>Returning</label><br>
+  <input type="date" name="returning" required><br><br>
+
+  <select name="purpose" required>
+    <option value="">Purpose</option>
+    <option>Tourism</option>
+    <option>Business</option>
+    <option>Education</option>
+    <option>Medical</option>
+  </select><br><br>
+
+  <input name="destination" placeholder="Destination Country" required><br><br>
+
+  <textarea name="message" placeholder="Message"></textarea><br><br>
+
+  <button type="submit">Submit Visa Request</button>
+</form>
+
+</body>
+</html>
